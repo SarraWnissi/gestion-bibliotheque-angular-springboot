@@ -1,0 +1,20 @@
+<h2>Liste des Livres pour la catégorie : Programmation</h2>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Titre</th>
+      <th scope="col">QTE</th>
+      <th scope="col"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let p of livs">
+      <th scope="row">{{ p.id }}</th>
+      <td>{{ p.titre }}</td>
+      <td>{{ p.qte }}</td>
+      <td><a class="btn btn-danger">DEL</a></td>
+    </tr>
+  </tbody>
+</table>
+<a class="btn btn-success">Ajouter un Livre</a>
